@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather Application</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            id="search-input"
+            type="search"
+            placeholder="🔍 Enter a city..."
+            aria-label="Search for a city"
+            required
+          />
+          <button type="submit">Search</button>
+        </form>
+      </header>
+
+      <main>
+        <section class="current-weather">
+          <div class="weather-info">
+            <h1 id="current-city">Paris</h1>
+            <p id="current-date">Saturday 15:32</p>
+            <p>
+              Moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2 km/h</strong>
+            </p>
+          </div>
+          <div class="temperature">
+            <span class="temperature-icon">☀️</span>
+            <strong id="current-temperature">14°C</strong>
+          </div>
+        </section>
+
+        <section class="forecast-weather">
+          <ul>
+            <li>
+              <span class="day">Sun</span> 🌤️ <br />
+              <strong>14°C</strong> - 18°C
+            </li>
+            <li>
+              <span class="day">Mon</span> 🌧️ <br />
+              <strong>12°C</strong> - 17°C
+            </li>
+            <li>
+              <span class="day">Tue</span> ⛅ <br />
+              <strong>15°C</strong> - 20°C
+            </li>
+            <li>
+              <span class="day">Wed</span> ☀️ <br />
+              <strong>16°C</strong> - 22°C
+            </li>
+            <li>
+              <span class="day">Thu</span> 🌦️ <br />
+              <strong>13°C</strong> - 19°C
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          This project was coded with 💜 by
+          <a href="#" target="_blank">Elmira Hoesseinzadeh</a> and is
+          <a href="#" target="_blank">open-sourced on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>.
+        </p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="src/script.js"></script>
+  </body>
+</html>
